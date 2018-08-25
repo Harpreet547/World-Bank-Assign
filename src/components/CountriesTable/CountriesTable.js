@@ -12,7 +12,7 @@ import {
 import countriesTableStyle from './CountriesTableStyle';
 
 class CountriesTable extends Component {
-
+//LIFECYCLE METHODS
   constructor(props) {
     super(props);
     this.state = {
@@ -44,7 +44,7 @@ class CountriesTable extends Component {
     return true;
   }
 
-
+//HANDLE EVENTS
   handleFirstClick = () => {
     this.fetchCountries(1);
     this.setState({
@@ -130,7 +130,8 @@ class CountriesTable extends Component {
       lendingTypeFilterKey: eventKey
     });
   }
-
+  
+//CUSTOM METHODS
   fetchCountries = (
       page, 
       incomeLevelFilter = this.state.incomeLevelFilter, 

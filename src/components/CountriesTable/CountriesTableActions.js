@@ -70,7 +70,7 @@ export const fetchIncomeLevels = () => {
     };
 }
 
-//REGION
+//REGION ACTIONS
 export const fetchRegionSuccess = (regions) => {
     return {
         type: ActionTypes.countriesTable.FETCH_REGION_SUCCESS,
